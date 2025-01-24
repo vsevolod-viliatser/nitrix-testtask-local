@@ -1,0 +1,41 @@
+/* index.css */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.apartment-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 16px 0;
+  padding: 0 16px;
+}
+
+
+button {
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .apartment-list {
+    flex-direction: column; /* Карточки в один столбец */
+    padding: 0 8px; /* Меньше отступов на маленьких экранах */
+  }
+}
